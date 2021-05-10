@@ -701,6 +701,10 @@ footer > .container {
   position: fixed;
   width: 528px;
   height: 581px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -726,4 +730,100 @@ footer > .container {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+}
+
+.modal-h1 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: var(--title-text-color);
+}
+
+.modal-container {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.user-comment {
+  width: 100%;
+  height: 96px;
+  padding: 12px 16px;
+  line-height: 1.143;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-button-submit {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.modal-container .modal-label:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* .modal-container:last-child {
+  margin-bottom: 0;
+} */
+
+.modal-label {
+  display: block;
+  /* margin-bottom: 10px; */
+}
+
+.modal-label-header {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.modal-input-container {
+  position: relative;
+}
+
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-input:focus + .modal-icon {
+  fill: var(--accent-color);
 }
