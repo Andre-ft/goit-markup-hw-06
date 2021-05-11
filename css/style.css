@@ -826,7 +826,7 @@ footer > .container {
 
 .form-input:focus {
   border-color: var(--accent-color);
-  -webkit-border-color: var(--accent-color);
+  /* -webkit-border-color: var(--accent-color); */
 }
 
 .form-input:focus + .modal-icon {
