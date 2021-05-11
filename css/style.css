@@ -728,7 +728,8 @@ footer > .container {
   cursor: pointer;
 }
 
-.subscribe-submit-button:hover {
+.subscribe-submit-button:hover,
+.subscribe-submit-button:focus {
   background-color: #188ce8;
 }
 
