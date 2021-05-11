@@ -663,13 +663,88 @@ footer > .container {
   margin-left: 0;
 }
 
-.join-block > .section-title {
+.join-block > .section-title,
+.subscribe-block > .section-title {
   text-align: left;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+.subscribe-block {
+  margin-left: 93px;
+  padding-top: 12px;
+}
+
+.subscribe-block-container {
+  display: flex;
+}
+
+.subscribe-form-input {
+  width: 358px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 75px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--primary-bacgr-color);
+  font-size: 16px;
+  line-height: 1.25;
+  /* display: flex;
+  align-items: center; */
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-submit-button {
+  margin-left: 12px;
+  padding: 10px 28px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.subscribe-submit-button:hover {
+  background-color: #188ce8;
+}
+
+.icon-send {
+  margin-left: 10px;
+  fill: #ffffff;
+}
+
+.subscribe-input-form-field {
+  position: relative;
+}
+
+.subscribe-input-label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* ======= modal window ========= */
@@ -781,6 +856,7 @@ footer > .container {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   outline: none;
   border-radius: 4px;
+  border-color: var(--accent-color);
 
   font-size: 16px;
   line-height: 1.187;
